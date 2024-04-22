@@ -1,0 +1,250 @@
+
+ @font-face {
+    font-family: "Anonymous Pro";
+    src: url("/fonts/AnonymousPro-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url("/fonts/AnonymousPro-Bold.ttf/fonts/AnonymousPro-Bold.ttf");
+    font-weight: bold;
+} 
+
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat:wght@400;700&family=Noto+Sans+Kawi:wght@400;700&display=swap");
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+body {
+   margin: 0;
+   background-color: #F1F1F1;
+   font-family:"Anonymous Pro", sans-serif;
+   font-size: 20px;
+}
+.container  {
+   width:100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}   
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+h1 {
+   font-family:"Anonymous Pro", sans-serif;
+font-size: 48px;
+margin-bottom: 30px;
+}
+h2{
+   font-size: 26px;
+ 
+   font-weight: bold;
+}
+p, a {
+   font-size: 20px;
+   font-weight: normal;
+   color: #121723;
+   text-decoration: none;
+}
+.header {
+   width: 100%;
+   padding: 22px 0;
+
+   background-color: #FFFFFF;
+   border-bottom: 1px #A1A6B4 solid; 
+   
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 999;
+}
+
+.header__logo {
+   width:212px;
+}
+.social {
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   column-gap: 20px;
+}
+.social_link {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+.social_link_white {
+   color: white;
+
+}
+.main {
+   margin: 30px 0;
+   background:#F1F1F1;
+}
+.main_cards {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+.card {
+   border-radius: 15px;
+background-color: white;
+width:100%;
+max-width: 370px;
+overflow: hidden;
+transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.5);
+
+}
+.card_img {  
+width:100%;
+}
+.card_text {
+   padding: 20px 25px;
+}
+.card_text > h2 {
+   margin-bottom: 10px;
+}
+footer {
+   height: 142px;
+   width: 100%;
+   background-color: #121723;
+
+}
+.footer__logo {
+   width:300px;
+}
+.footer__line {
+height: 1px;
+   margin: 20px 0;
+   border: none;
+   background-color: #A1A6B4;
+   background-color: rgba(230,232,230,0.4);
+}
+.footer__text {
+color: #A1A6B4;
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+text-transform: uppercase;
+}
+.main_cards .card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.5);
+}
+.main_cards .card {
+   transition: all 0.3s ease-in-out;
+}
+/* cnbkb cnhfybw*/
+.sneaker-big {
+   padding: 48px;
+   border-radius: 5%;
+   background-color: white;
+
+}
+.sneaker-big__image {
+   width: 100%;
+   
+}
+.sneaker-big__title {
+   font-size: 48px;
+}
+.sneaker-big__subtitle {
+font-size: 36px;
+}
+.sneaker-big__title, 
+.sneaker-big__subtitle {
+   font-weight: normal;
+font-family: "Anonymous Pro", sans-serif;
+   margin-bottom: 24px;
+}
+.info {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:flex-start ;
+
+   gap: 32px;
+}
+.info__text {
+   width: 45%;
+}
+.info__column {
+   width: 45%;
+   
+}
+.info__row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   border-bottom: 1px  black solid;
+   padding: 24px 0;
+
+}
+.info__row_first  {
+padding: 0 0 20px 0s;
+font-weight: normal;
+   font-size: 30px;
+}
+.info__row h3 {
+   font-weight: normal;
+   font-size: 30px;
+}
+/* Adaptiv*/
+@media screen and (width <= 375px) {
+    .header {
+      padding: 24px 0px 24px 0px;
+      position: relative;
+    }
+.flex-container {
+   flex-direction: column;
+   row-gap: 24px;
+}
+.footer {
+   padding: 32px 0px 24px 0px
+}
+.footer__line {
+   margin: 24px 0px
+}
+h1{
+   font-size: 32px;
+}
+.main {
+   padding: 0px 16px;
+}
+.sneaker-big {
+   padding: 24px;
+   border-radius: 24px;
+}
+.sneaker-big__subtitle {
+   font-size: 20px;
+}
+.info__text {
+   width: 100%;
+   font-size: 16px;
+}
+.info__row  > h3 {
+font-size:24px;
+}
+.info {
+   flex-direction: column;
+   row-gap: 32px;
+}
+.info__column {
+   width: 100%;
+}
+}
